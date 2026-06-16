@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+    color:white;
+    font-family:Bebas 'Courier New', Courier, monospace, sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:100%;
+    max-width:600px;
+    text-align:center;
+    padding:20px;
+    
+}
+
+.profile img{
+    width: 200px;
+    height: 200px;;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border: 4px solid rgba(36, 36, 226, 0.3); 
+    box-shadow: 0 0 25px rgba(63, 63, 200, 0.5);
+    filter: brightness(1.1) contrast(1.1);
+    transition: 0.5s;
+}
+
+.profile h1{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.profile p{
+    color:#cccccc;
+    margin-bottom:30px;
+    letter-spacing:3px;
+}
+
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px 20px;
+    border:1px solid #1414de;
+    border-radius:10px;
+    text-decoration:none;
+    color:rgb(192, 190, 209);
+    font-size:22px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#111;
+    transform:scale(1.03);
+}
+
+.icon{
+    width:35px;
+    height:35px;
+    object-fit:contain;
+}
+body{
+background:linear-gradient(
+-45deg,
+#000,
+#111,
+#0c0c0c,
+#444242
+);
+background-size:400% 400%;
+animation:bg 8s infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+.btn{
+position:relative;
+overflow:hidden;
+}
+.btn::before{
+content:'';
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:rgba(223, 223, 227, 0.15);
+transition:0.5s;
+}
+
+.btn:hover::before{
+left:100%;
+}
+.btn:hover{
+background:#111;
+transform:scale(1.05);
+box-shadow:0 0 20px rgb(14, 43, 185);
+}
+.btn:active{
+transform:scale(0.95);
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(20, 20, 222, 0.8);
+}
+
+/* الباركود  */
+.qr-icon{
+    width:35px;
+    height:35px;
+}
+.app-circle {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.app-circle img {
+  width: 60%; 
+}
